@@ -1,0 +1,98 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Recipe Book - Cook With Love</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <div class="logo">🍲 My Recipe Book</div>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="login.html">Login</a>
+        <a href="catalog.html">Catalog</a>
+        <a href="registration.html">Registration</a>
+    </nav>
+</header>
+
+<section class="hero">
+    <div class="hero-content">
+        <h1>Cook With Love ❤️</h1>
+        <h2>Discover Delicious Recipes and Cook Something Special!</h2>
+        <p>Explore tasty recipes and make every meal memorable.</p>
+        <a href="catalog.html" class="btn">Explore Recipes</a>
+    </div>
+</section>
+
+<main class="container">
+
+    <section class="search-section">
+        <h2>Find Your Favourite Recipe</h2>
+        <form action="catalog.html" method="get">
+            <input type="text" name="search"
+                   placeholder="Search recipes...">
+            <button class="btn" type="submit">Search</button>
+        </form>
+    </section>
+
+    <section>
+        <h2 class="section-title">Popular Categories</h2>
+        <div class="category-grid">
+            <a href="catalog.html#breakfast">🥞 Breakfast</a>
+            <a href="catalog.html#lunch">🍛 Lunch</a>
+            <a href="catalog.html#dinner">🍝 Dinner</a>
+            <a href="catalog.html#snacks">🥪 Snacks</a>
+            <a href="catalog.html#desserts">🧁 Desserts</a>
+        </div>
+    </section>
+
+    <section>
+        <h2 class="section-title">Featured Recipes</h2>
+        <div class="recipe-grid">
+
+            <div class="recipe-card">
+                <img src="https://images.unsplash.com/photo-1589301760014-d929f3979dbc?w=600"
+                     alt="Masala dosa">
+                <h3>Masala Dosa</h3>
+                <p>Crispy dosa with delicious potato filling.</p>
+                <a href="recipe.html?id=dosa" class="btn">View Recipe</a>
+            </div>
+
+            <div class="recipe-card">
+                <img src="https://www.prideofindia.co/cdn/shop/articles/vegetable_biryani_2000x.jpg?v=1717514526"
+                     alt="Vegetable biryani">
+                <h3>Vegetable Biryani</h3>
+                <p>Delicious rice cooked with vegetables and spices.</p>
+                <a href="recipe.html?id=biryani" class="btn">View Recipe</a>
+            </div>
+
+            <div class="recipe-card">
+                <img src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?w=600"
+                     alt="Chocolate cake">
+                <h3>Chocolate Cake</h3>
+                <p>A soft and sweet chocolate dessert.</p>
+                <a href="recipe.html?id=cake" class="btn">View Recipe</a>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="tip-section">
+        <h2>👩‍🍳 Cooking Tip</h2>
+        <p>Always prepare and measure your ingredients before starting to cook.</p>
+    </section>
+
+</main>
+
+<footer>
+    <h3>🍲 My Recipe Book – Cook With Love</h3>
+    <p>Contact: hello@myrecipebook.com</p>
+    <p>© 2026 My Recipe Book. All Rights Reserved.</p>
+</footer>
+
+</body>
+</html>

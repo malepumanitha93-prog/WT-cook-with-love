@@ -1,0 +1,131 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipe Catalog - My Recipe Book</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <div class="logo">🍲 My Recipe Book</div>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="login.html">Login</a>
+        <a href="catalog.html">Catalog</a>
+        <a href="registration.html">Registration</a>
+    </nav>
+</header>
+
+<main class="container">
+
+    <section class="catalog-hero">
+        <h1>Our Recipe Collection 🍽️</h1>
+        <p>Choose your favourite food and start cooking!</p>
+    </section>
+
+    <div class="catalog-tools">
+        <input type="search" id="recipeSearch"
+               placeholder="Search recipes...">
+
+        <select id="categoryFilter">
+            <option value="all">All Categories</option>
+            <option value="breakfast">Breakfast</option>
+            <option value="lunch">Lunch</option>
+            <option value="dinner">Dinner</option>
+            <option value="snacks">Snacks</option>
+            <option value="desserts">Desserts</option>
+            <option value="healthy">Healthy Food</option>
+            <option value="indian">Indian Recipes</option>
+        </select>
+    </div>
+
+    <h2 class="section-title">All Delicious Recipes</h2>
+
+    <div class="recipe-grid" id="recipeGrid">
+
+        <div class="recipe-card catalog-card"
+             data-name="masala dosa"
+             data-category="breakfast indian">
+            <img src="https://images.unsplash.com/photo-1589301760014-d929f3979dbc?w=600" alt="Masala dosa">
+            <h3>Masala Dosa</h3>
+            <p>Prep: 15 min | Cook: 20 min</p>
+            <p>Servings: 2 | Easy</p>
+            <a href="recipe.html?id=dosa" class="btn">View Recipe</a>
+            <button class="heart-btn" data-name="Masala Dosa">♡</button>
+        </div>
+
+        <div class="recipe-card catalog-card"
+             data-name="vegetable biryani"
+             data-category="lunch indian">
+            <img src="https://www.prideofindia.co/cdn/shop/articles/vegetable_biryani_2000x.jpg?v=1717514526" alt="Vegetable biryani">
+            <h3>Vegetable Biryani</h3>
+            <p>Prep: 20 min | Cook: 35 min</p>
+            <p>Servings: 3 | Medium</p>
+            <a href="recipe.html?id=biryani" class="btn">View Recipe</a>
+            <button class="heart-btn" data-name="Vegetable Biryani">♡</button>
+        </div>
+
+        <div class="recipe-card catalog-card"
+             data-name="chocolate cake"
+             data-category="desserts">
+            <img src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?w=600" alt="Chocolate cake">
+            <h3>Chocolate Cake</h3>
+            <p>Prep: 15 min | Cook: 30 min</p>
+            <p>Servings: 6 | Easy</p>
+            <a href="recipe.html?id=cake" class="btn">View Recipe</a>
+            <button class="heart-btn" data-name="Chocolate Cake">♡</button>
+        </div>
+
+        <div class="recipe-card catalog-card"
+             data-name="vegetable sandwich"
+             data-category="snacks healthy">
+            <img src="https://images.unsplash.com/photo-1528735602780-2552fd46c7af?w=600" alt="Vegetable sandwich">
+            <h3>Vegetable Sandwich</h3>
+            <p>Prep: 10 min | Cook: 5 min</p>
+            <p>Servings: 2 | Easy</p>
+            <a href="recipe.html?id=sandwich" class="btn">View Recipe</a>
+            <button class="heart-btn" data-name="Vegetable Sandwich">♡</button>
+        </div>
+
+        <div class="recipe-card catalog-card"
+             data-name="tomato pasta"
+             data-category="dinner">
+            <img src="https://images.unsplash.com/photo-1473093295043-cdd812d0e601?w=600" alt="Tomato pasta">
+            <h3>Tomato Pasta</h3>
+            <p>Prep: 10 min | Cook: 15 min</p>
+            <p>Servings: 2 | Easy</p>
+            <a href="recipe.html?id=pasta" class="btn">View Recipe</a>
+            <button class="heart-btn" data-name="Tomato Pasta">♡</button>
+        </div>
+
+        <div class="recipe-card catalog-card"
+             data-name="fruit bowl"
+             data-category="breakfast healthy">
+            <img src="https://images.unsplash.com/photo-1512621776951-a57141f2eefd?w=600" alt="Fresh fruit bowl">
+            <h3>Fresh Fruit Bowl</h3>
+            <p>Prep: 10 min | Cook: 0 min</p>
+            <p>Servings: 2 | Easy</p>
+            <a href="recipe.html?id=fruit" class="btn">View Recipe</a>
+            <button class="heart-btn" data-name="Fresh Fruit Bowl">♡</button>
+        </div>
+
+    </div>
+
+    <section class="favourites">
+        <h2>❤️ Favourite Recipes</h2>
+        <p id="favouriteList">Your favourites will appear here.</p>
+    </section>
+
+</main>
+
+<footer>
+    <h3>My Recipe Book – Cook With Love</h3>
+    <p>Contact: hello@myrecipebook.com</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

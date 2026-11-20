@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipe Details - My Recipe Book</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="recipes.js" defer></script>
+    <script src="recipe-detail.js" defer></script>
+</head>
+<body>
+<header>
+    <div class="logo">🍲 My Recipe Book</div>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="login.html">Login</a>
+        <a href="catalog.html">Catalog</a>
+        <a href="registration.html">Registration</a>
+    </nav>
+</header>
+<main class="container recipe-detail">
+    <a href="catalog.html">← Back to Catalog</a>
+    <div id="recipeContent">
+        <div class="detail-heading">
+            <h1 id="recipeTitle">Loading recipe…</h1>
+            <p id="recipeDescription"></p>
+        </div>
+        <img id="recipeImage" class="detail-image" alt="">
+        <div class="detail-meta">
+            <span id="prepTime"></span><span id="cookTime"></span>
+            <span id="servings"></span><span id="difficulty"></span>
+        </div>
+        <div class="detail-columns">
+            <section><h2>🥕 Ingredients</h2><ul id="ingredientList" class="ingredient-list"></ul></section>
+            <section><h2>👩‍🍳 Cooking Method</h2><ol class="method-list" id="methodList"></ol></section>
+        </div>
+        <section class="tip-section"><h2>💡 Cooking Tips</h2><p id="cookingTip"></p></section>
+        <section class="video-panel">
+            <h2>🎬 Cooking Tutorial</h2><p id="videoDescription"></p>
+            <a id="videoLink" href="#" target="_blank" rel="noopener noreferrer" class="btn">Search Recipe Videos</a>
+        </section>
+        <div class="print-row"><button class="btn" type="button" onclick="window.print()">🖨 Print Recipe</button></div>
+    </div>
+    <div id="recipeNotFound" class="not-found" hidden>
+        <h1>Recipe not found</h1><p>Choose a recipe from the catalog to see its ingredients and instructions.</p>
+        <a href="catalog.html" class="btn">Browse recipes</a>
+    </div>
+</main>
+<footer><h3>My Recipe Book – Cook With Love</h3><p>Contact: hello@myrecipebook.com</p></footer>
+</body>
+</html>
